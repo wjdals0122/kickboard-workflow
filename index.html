@@ -8,411 +8,420 @@
 </head>
 <body>
 
-  <!-- Hero -->
+  <!-- ===== Hero ===== -->
   <header class="hero">
     <div class="hero-badge">히타치-LG × 창업프로젝트실습</div>
     <h1 class="hero-title">GCOO <span class="x">×</span> PLUSPOT</h1>
     <p class="hero-subtitle">전동 킥보드 스테이션 디스플레이 서비스 기획</p>
-    <div class="hero-meta">
-      <span>산업경영공학과 팀장</span>
-      <span class="dot">·</span>
-      <span>4인 융합 팀 프로젝트</span>
-      <span class="dot">·</span>
-      <span>H·L Data Storage 협력</span>
+    <p class="hero-desc">
+      특수 디스플레이의 <strong>제약을 기회로 전환</strong>하고,<br>
+      기존 인프라와 연계하여 <strong>안전 문화를 바꾸는 서비스</strong>를 설계한 전체 과정
+    </p>
+    <div class="hero-stats">
+      <div class="h-stat"><span class="h-num">6</span><span class="h-lbl">기획 단계</span></div>
+      <div class="h-stat"><span class="h-num">4</span><span class="h-lbl">핵심 기능</span></div>
+      <div class="h-stat"><span class="h-num">100+</span><span class="h-lbl">연계 스테이션</span></div>
     </div>
-    <nav class="star-nav">
-      <a href="#situation" class="nav-item s">S<span>ituation</span></a>
-      <a href="#task" class="nav-item t">T<span>ask</span></a>
-      <a href="#action" class="nav-item a">A<span>ction</span></a>
-      <a href="#result" class="nav-item r">R<span>esult</span></a>
+
+    <!-- Phase bar -->
+    <div class="phase-bar">
+      <div class="phase-tag input">INPUT</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-tag process">PROCESS</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-tag validation">VALIDATION</div>
+      <div class="phase-arrow">→</div>
+      <div class="phase-tag output">OUTPUT</div>
+    </div>
+
+    <!-- Tab nav -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="all">📋 전체 흐름</button>
+      <button class="tab-btn" data-tab="flow">🔄 User Flow</button>
+      <button class="tab-btn" data-tab="design">🎨 서비스 설계</button>
+      <button class="tab-btn" data-tab="result">✅ 결과 요약</button>
     </nav>
   </header>
 
-  <!-- ===== S: Situation ===== -->
-  <section id="situation" class="section star-section">
+  <!-- ===== Main Content ===== -->
+  <main class="main-content">
     <div class="container">
-      <div class="star-label s-label">
-        <span class="star-letter">S</span>
-        <div>
-          <div class="star-word">Situation</div>
-          <div class="star-desc">우리가 마주한 상황</div>
-        </div>
-      </div>
 
-      <div class="situation-layout">
-        <div class="situation-text">
-          <h2 class="section-heading">전동 킥보드 이용은 급증했지만,<br>안전 문화는 따라오지 못했다</h2>
-          <p class="body-text">
+      <!-- ===== STEP 1 ===== -->
+      <div class="step-card" data-tabs="all">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title-block">
+            <h2 class="step-title">문제 발견</h2>
+            <p class="step-sub">전동 킥보드 시장의 구조적 문제 인식</p>
+          </div>
+          <span class="step-tag input">INPUT</span>
+        </div>
+
+        <div class="step-body">
+          <p class="step-context">
             창업프로젝트실습 수업에서 <strong>히타치-LG(H·L Data Storage)의 226:775 비율 세로형 특수 디스플레이</strong>를 활용한 서비스를 기획하는 과제를 받았습니다.
-            해당 디스플레이는 코로나 시기 마스크 착용 여부 판단용으로 사용된 제품으로, AI 안면인식 기능을 탑재하고 있었습니다.
-          </p>
-          <p class="body-text">
             시장 조사 과정에서 전동 킥보드 시장에 주목했습니다. 이용량은 급증하고 있었지만, 안전 문화는 전혀 따라오지 못하는 구조적 문제가 있었습니다.
           </p>
-        </div>
 
-        <div class="stats-block">
-          <div class="stat-row">
-            <div class="stat-item red">
-              <div class="stat-num">67%</div>
-              <div class="stat-lbl">킥보드 이용량 급증<br><small>2022→2023년 (빔 기준)</small></div>
+          <div class="stat-grid">
+            <div class="stat-card red">
+              <div class="s-num">67%</div>
+              <div class="s-lbl">킥보드 이용량 급증<br><small>2022→2023년 (빔 기준)</small></div>
             </div>
-            <div class="stat-item red">
-              <div class="stat-num">82%</div>
-              <div class="stat-lbl">안전모 미착용<br><small>항상 착용하는 이용자 18%</small></div>
+            <div class="stat-card red">
+              <div class="s-num">82%</div>
+              <div class="s-lbl">안전모 미착용률<br><small>항상 착용하는 이용자 18%</small></div>
             </div>
-          </div>
-          <div class="stat-row">
-            <div class="stat-item orange">
-              <div class="stat-num">20배</div>
-              <div class="stat-lbl">사고 증가<br><small>6년간, 3년간 사망 55명</small></div>
+            <div class="stat-card orange">
+              <div class="s-num">20배</div>
+              <div class="s-lbl">6년간 사고 증가<br><small>3년간 사망자 55명</small></div>
             </div>
-            <div class="stat-item orange">
-              <div class="stat-num">21.3%</div>
-              <div class="stat-lbl">음주 운전 비율<br><small>사고 환자 중 음주 상태</small></div>
+            <div class="stat-card orange">
+              <div class="s-num">21.3%</div>
+              <div class="s-lbl">음주 운전 비율<br><small>사고 환자 중 음주 상태</small></div>
             </div>
           </div>
-          <div class="stat-source">출처: 충청북도 사회조사 2022-2023 / 교통안전공단</div>
-        </div>
-      </div>
 
-      <div class="problem-list">
-        <div class="problem-item">
-          <span class="p-icon">🚶</span>
-          <div><strong>보행 방해</strong> — 길가에 방치된 킥보드로 인한 보행 경로 침범</div>
-        </div>
-        <div class="problem-item">
-          <span class="p-icon">🍺</span>
-          <div><strong>음주 운전</strong> — 단속에도 불구하고 지속되는 음주 탑승</div>
-        </div>
-        <div class="problem-item">
-          <span class="p-icon">📋</span>
-          <div><strong>무면허 운전</strong> — 면허 확인 없이 탑승 가능한 구조적 허점</div>
-        </div>
-        <div class="problem-item">
-          <span class="p-icon">🪖</span>
-          <div><strong>헬멧 미착용</strong> — 의무임에도 착용률 18%에 불과</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== T: Task ===== -->
-  <section id="task" class="section star-section task-section">
-    <div class="container">
-      <div class="star-label t-label">
-        <span class="star-letter">T</span>
-        <div>
-          <div class="star-word">Task</div>
-          <div class="star-desc">우리가 해결해야 할 과제</div>
-        </div>
-      </div>
-
-      <h2 class="section-heading">특수한 디스플레이를 어디에, 어떻게 써야 할까?</h2>
-
-      <div class="task-cards">
-        <div class="task-card constraint">
-          <div class="tc-icon">📐</div>
-          <h3>디스플레이 제약</h3>
-          <p>226:775의 극단적 세로 비율 — 일반 서비스에 적용하기 어려운 형태. 단독 서비스보다 <strong>기존 인프라와 연계</strong>하는 방식이 적합하다고 판단.</p>
-        </div>
-        <div class="task-card insight">
-          <div class="tc-icon">💡</div>
-          <h3>핵심 인사이트</h3>
-          <p>세종시-LG전자가 협력하여 전국 100개 이상 설치 중인 <strong>PLUSPOT(전동 킥보드 주차 스테이션)</strong>을 발견. 이 인프라에 디스플레이를 결합하면 현실적 확장이 가능.</p>
-        </div>
-        <div class="task-card goal">
-          <div class="tc-icon">🎯</div>
-          <h3>우리의 목표</h3>
-          <p>단순 정보 표시가 아닌, <strong>안전 인식을 바꾸는 서비스</strong>를 설계. 강제가 아닌 <strong>리워드 기반</strong>으로 이용자가 자발적으로 안전 행동을 하도록 유도.</p>
-        </div>
-      </div>
-
-      <div class="task-quote">
-        <blockquote>
-          "100% 제거가 목적이 아닌, <strong>예방과 인식 개선</strong>에 초점을 맞춘다."
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== A: Action ===== -->
-  <section id="action" class="section star-section">
-    <div class="container">
-      <div class="star-label a-label">
-        <span class="star-letter">A</span>
-        <div>
-          <div class="star-word">Action</div>
-          <div class="star-desc">우리가 설계한 서비스</div>
-        </div>
-      </div>
-
-      <h2 class="section-heading">4가지 핵심 기능으로 설계한 서비스 구조</h2>
-
-      <div class="features-grid">
-        <div class="feature-card safety">
-          <div class="f-num">01</div>
-          <div class="f-icon">🪖</div>
-          <h3>Safety</h3>
-          <p>헬멧 착용 여부 AI 안면인식(YOLOv3), 음주측정(18:00~06:00), 면허 확인 시스템</p>
-        </div>
-        <div class="feature-card enjoyable">
-          <div class="f-num">02</div>
-          <div class="f-icon">🎮</div>
-          <h3>Enjoyable</h3>
-          <p>마일리지 리워드, 안전 스탬프 미션, 주간 순위 경쟁으로 자발적 안전 탑승 유도</p>
-        </div>
-        <div class="feature-card restriction">
-          <div class="f-num">03</div>
-          <div class="f-icon">🚫</div>
-          <h3>Restriction</h3>
-          <p>2인 탑승 방지 카메라, 무면허 경고 팝업, 음주 과태료 안내로 제재</p>
-        </div>
-        <div class="feature-card revenue">
-          <div class="f-num">04</div>
-          <div class="f-icon">💰</div>
-          <h3>Revenue</h3>
-          <p>자회사 광고 및 수익성 광고 배너, 관리자 이용 현황 데이터 분석</p>
-        </div>
-      </div>
-
-      <!-- User Flow -->
-      <div class="flow-wrapper">
-        <h3 class="flow-title">User Flow 설계</h3>
-
-        <!-- Legend -->
-        <div class="flow-legend">
-          <div class="legend-item">
-            <div class="legend-shape circle"></div>
-            <span>시작 / 종료</span>
-          </div>
-          <div class="legend-item">
-            <div class="legend-shape rect green"></div>
-            <span>화면 (Screen)</span>
-          </div>
-          <div class="legend-item">
-            <div class="legend-shape rect purple"></div>
-            <span>메뉴 선택</span>
-          </div>
-          <div class="legend-item">
-            <div class="legend-shape diamond"></div>
-            <span>조건 분기</span>
-          </div>
-          <div class="legend-item">
-            <div class="legend-shape rect orange"></div>
-            <span>처리 단계</span>
+          <div class="problem-row">
+            <div class="prob-item"><span class="prob-icon">🚶</span><div><strong>보행 방해</strong> — 방치된 킥보드로 인한 보행 경로 침범</div></div>
+            <div class="prob-item"><span class="prob-icon">🍺</span><div><strong>음주 운전</strong> — 단속에도 지속되는 음주 탑승</div></div>
+            <div class="prob-item"><span class="prob-icon">📋</span><div><strong>무면허 운전</strong> — 면허 확인 없이 탑승 가능한 구조적 허점</div></div>
+            <div class="prob-item"><span class="prob-icon">🪖</span><div><strong>헬멧 미착용</strong> — 의무임에도 착용률 18%에 불과</div></div>
           </div>
         </div>
+      </div>
 
-        <!-- Consumer Flow -->
-        <div class="flow-block">
-          <div class="flow-block-label user">👤 소비자 플로우</div>
+      <div class="step-arrow-down">↓</div>
 
-          <!-- Main path -->
-          <div class="flow-main-path">
-            <div class="fn circle-node">USER</div>
-            <div class="fa">→</div>
-            <div class="fn green-node">메인 화면</div>
-            <div class="fa">→</div>
-            <div class="fn green-node">로그인</div>
-            <div class="fa">→</div>
-            <div class="fn orange-node pill">통합 QR 로그인</div>
-            <div class="fa">→</div>
-            <div class="fn green-node home-node">HOME SCREEN</div>
+      <!-- ===== STEP 2 ===== -->
+      <div class="step-card" data-tabs="all">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title-block">
+            <h2 class="step-title">과제 정의</h2>
+            <p class="step-sub">특수 디스플레이를 어디에, 어떻게 써야 할까?</p>
+          </div>
+          <span class="step-tag input">INPUT</span>
+        </div>
+
+        <div class="step-body">
+          <div class="task-cards">
+            <div class="task-card constraint">
+              <div class="tc-icon">📐</div>
+              <h3>디스플레이 제약</h3>
+              <p>226:775의 극단적 세로 비율 — 일반 서비스에 적용하기 어려운 형태. 단독 서비스보다 <strong>기존 인프라와 연계</strong>하는 방식이 적합하다고 판단.</p>
+            </div>
+            <div class="task-card insight">
+              <div class="tc-icon">💡</div>
+              <h3>핵심 인사이트 발견</h3>
+              <p>세종시-LG전자가 협력하여 전국 100개 이상 설치 중인 <strong>PLUSPOT(전동 킥보드 주차 스테이션)</strong>을 발견. 이 인프라에 디스플레이를 결합하면 현실적 확장이 가능.</p>
+            </div>
+            <div class="task-card goal">
+              <div class="tc-icon">🎯</div>
+              <h3>방향 설정</h3>
+              <p>단순 정보 표시가 아닌, <strong>안전 인식을 바꾸는 서비스</strong>를 설계. 강제가 아닌 <strong>리워드 기반</strong>으로 이용자가 자발적으로 안전 행동을 하도록 유도.</p>
+            </div>
           </div>
 
-          <!-- Branch container -->
-          <div class="branch-container">
+          <div class="highlight-box">
+            <div class="hb-icon">💬</div>
+            <p>"100% 제거가 목적이 아닌, <strong>예방과 인식 개선</strong>에 초점을 맞춘다. 강제가 아닌 즐거움으로."</p>
+          </div>
+        </div>
+      </div>
 
-            <!-- Branch: 대여 -->
-            <div class="branch-row">
-              <div class="branch-connector"></div>
-              <div class="fn purple-node">대여</div>
+      <div class="step-arrow-down">↓</div>
+
+      <!-- ===== STEP 3 ===== -->
+      <div class="step-card" data-tabs="all design">
+        <div class="step-header">
+          <div class="step-num">3</div>
+          <div class="step-title-block">
+            <h2 class="step-title">서비스 구조 설계</h2>
+            <p class="step-sub">4가지 핵심 기능으로 서비스 뼈대 구성</p>
+          </div>
+          <span class="step-tag process">PROCESS</span>
+        </div>
+
+        <div class="step-body">
+          <div class="features-grid">
+            <div class="feature-card safety">
+              <div class="f-num">01</div>
+              <div class="f-icon">🪖</div>
+              <h3>Safety</h3>
+              <p>헬멧 착용 여부 AI 안면인식(YOLOv3), 음주측정(18:00~06:00), 면허 확인 시스템</p>
+            </div>
+            <div class="feature-card enjoyable">
+              <div class="f-num">02</div>
+              <div class="f-icon">🎮</div>
+              <h3>Enjoyable</h3>
+              <p>마일리지 리워드, 안전 스탬프 미션, 주간 순위 경쟁으로 자발적 안전 탑승 유도</p>
+            </div>
+            <div class="feature-card restriction">
+              <div class="f-num">03</div>
+              <div class="f-icon">🚫</div>
+              <h3>Restriction</h3>
+              <p>2인 탑승 방지 카메라, 무면허 경고 팝업, 음주 과태료 안내로 제재</p>
+            </div>
+            <div class="feature-card revenue">
+              <div class="f-num">04</div>
+              <div class="f-icon">💰</div>
+              <h3>Revenue</h3>
+              <p>자회사 광고 및 수익성 광고 배너, 관리자 이용 현황 데이터 분석</p>
+            </div>
+          </div>
+
+          <div class="design-note">
+            <strong>설치 구조 결정:</strong> 방수 한계 보완을 위한 박스형 보호 케이스 + 헬멧 보관함 + 2인 탑승 방지 별도 카메라를 물리적으로 추가 설계
+          </div>
+        </div>
+      </div>
+
+      <div class="step-arrow-down">↓</div>
+
+      <!-- ===== STEP 4 ===== -->
+      <div class="step-card" data-tabs="all flow">
+        <div class="step-header">
+          <div class="step-num">4</div>
+          <div class="step-title-block">
+            <h2 class="step-title">User Flow 설계</h2>
+            <p class="step-sub">소비자와 관리자 두 경로의 서비스 흐름 정의</p>
+          </div>
+          <span class="step-tag process">PROCESS</span>
+        </div>
+
+        <div class="step-body">
+
+          <!-- Legend -->
+          <div class="flow-legend">
+            <div class="legend-item"><div class="ls circle"></div><span>시작 / 종료</span></div>
+            <div class="legend-item"><div class="ls rect green"></div><span>화면 (Screen)</span></div>
+            <div class="legend-item"><div class="ls rect purple"></div><span>메뉴 선택</span></div>
+            <div class="legend-item"><div class="ls diamond"></div><span>조건 분기</span></div>
+            <div class="legend-item"><div class="ls rect orange"></div><span>처리 단계</span></div>
+          </div>
+
+          <!-- Consumer Flow -->
+          <div class="flow-section">
+            <div class="flow-label user-label">👤 소비자 플로우</div>
+
+            <div class="flow-main">
+              <div class="fn circle-n">USER</div>
               <div class="fa">→</div>
-              <div class="fn green-node">킥보드 선택</div>
+              <div class="fn green-n">메인 화면</div>
               <div class="fa">→</div>
-              <div class="fn green-node">헬멧 인식</div>
+              <div class="fn green-n">로그인</div>
               <div class="fa">→</div>
-              <div class="fn green-node">면허 확인</div>
+              <div class="fn orange-n pill-n">통합 QR 로그인</div>
               <div class="fa">→</div>
-              <div class="fn diamond-node">음주<br>단속 시간?</div>
-              <!-- YES/NO inline -->
-              <div class="branch-split">
-                <div class="split-yes">
-                  <span class="badge-yes">YES</span>
-                  <div class="fa">→</div>
-                  <div class="fn red-node">음주 측정</div>
-                  <div class="fa">→</div>
-                  <div class="fn circle-node end">로그아웃</div>
-                </div>
-                <div class="split-no">
-                  <span class="badge-no">NO</span>
-                  <div class="fa">→</div>
-                  <div class="fn green-node">요금제 선택</div>
-                  <div class="fa">→</div>
-                  <div class="fn success-node">대여 완료!</div>
-                  <div class="fa">→</div>
-                  <div class="fn circle-node end">로그아웃</div>
+              <div class="fn home-n">HOME SCREEN</div>
+            </div>
+
+            <div class="branch-wrap">
+
+              <!-- 대여 branch -->
+              <div class="branch-row">
+                <div class="branch-line"></div>
+                <div class="fn purple-n">대여</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">킥보드 선택</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">헬멧 인식</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">면허 확인</div>
+                <div class="fa">→</div>
+                <div class="fn diamond-n">음주<br>단속 시간?</div>
+                <div class="branch-split">
+                  <div class="split-path">
+                    <span class="badge-yes">YES</span>
+                    <div class="fa">→</div>
+                    <div class="fn red-n">음주 측정</div>
+                    <div class="fa">→</div>
+                    <div class="fn end-n">로그아웃</div>
+                  </div>
+                  <div class="split-path">
+                    <span class="badge-no">NO</span>
+                    <div class="fa">→</div>
+                    <div class="fn green-n">요금제 선택</div>
+                    <div class="fa">→</div>
+                    <div class="fn success-n">대여 완료!</div>
+                    <div class="fa">→</div>
+                    <div class="fn end-n">로그아웃</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Branch: 마일리지 -->
-            <div class="branch-row simple">
-              <div class="branch-connector"></div>
-              <div class="fn purple-node">마일리지</div>
-              <div class="fa">→</div>
-              <div class="fn green-node">마일리지 확인</div>
-              <div class="fa">→</div>
-              <div class="fn green-node">안전 스탬프 미션</div>
-            </div>
+              <!-- 마일리지 branch -->
+              <div class="branch-row simple">
+                <div class="branch-line"></div>
+                <div class="fn purple-n">마일리지</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">마일리지 확인</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">안전 스탬프 미션</div>
+              </div>
 
-            <!-- Branch: 도움말 -->
-            <div class="branch-row simple">
-              <div class="branch-connector last"></div>
-              <div class="fn purple-node">도움말 및 문의</div>
-              <div class="fa">→</div>
-              <div class="fn green-node">도움말 문의</div>
-              <div class="fa">→</div>
-              <div class="fn green-node">고장 신고</div>
-              <div class="fa">→</div>
-              <div class="fn green-node">관리자 연결</div>
-            </div>
+              <!-- 도움말 branch -->
+              <div class="branch-row simple last">
+                <div class="branch-line"></div>
+                <div class="fn purple-n">도움말 및 문의</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">도움말 문의</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">고장 신고</div>
+                <div class="fa">→</div>
+                <div class="fn green-n">관리자 연결</div>
+              </div>
 
+            </div>
           </div>
+
+          <!-- Admin Flow -->
+          <div class="flow-section admin-section">
+            <div class="flow-label admin-label">🔧 관리자 플로우</div>
+            <div class="flow-main">
+              <div class="fn admin-circle-n">관리자</div>
+              <div class="fa">→</div>
+              <div class="fn green-n">코드 입력</div>
+              <div class="fa">→</div>
+              <div class="fn admin-home-n">관리자 홈</div>
+            </div>
+            <div class="admin-branches">
+              <div class="admin-item">
+                <div class="fn purple-n">배터리 확인</div>
+                <p>킥보드 배터리 상태 모니터링</p>
+              </div>
+              <div class="admin-item">
+                <div class="fn purple-n">이용자 분석</div>
+                <p>이용 현황 데이터 그래프</p>
+              </div>
+              <div class="admin-item">
+                <div class="fn purple-n">고장 신고 내역</div>
+                <p>유지보수 필요 킥보드 확인</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="step-arrow-down">↓</div>
+
+      <!-- ===== STEP 5 ===== -->
+      <div class="step-card" data-tabs="all design">
+        <div class="step-header">
+          <div class="step-num">5</div>
+          <div class="step-title-block">
+            <h2 class="step-title">UX 설계 근거</h2>
+            <p class="step-sub">각 결정이 왜 이 방향으로 이루어졌는가</p>
+          </div>
+          <span class="step-tag validation">VALIDATION</span>
         </div>
 
-        <!-- Admin Flow -->
-        <div class="flow-block admin-flow-block">
-          <div class="flow-block-label admin">🔧 관리자 플로우</div>
-          <div class="flow-main-path">
-            <div class="fn circle-node admin">관리자</div>
-            <div class="fa">→</div>
-            <div class="fn green-node">코드 입력</div>
-            <div class="fa">→</div>
-            <div class="fn green-node home-node admin-home">관리자 홈</div>
-          </div>
-          <div class="admin-branches">
-            <div class="admin-branch-item">
-              <div class="fn purple-node">배터리 확인</div>
-              <p>킥보드 배터리 상태 모니터링</p>
+        <div class="step-body">
+          <div class="decision-grid">
+            <div class="decision-item">
+              <div class="d-num">①</div>
+              <div class="d-content">
+                <strong>세로 비율 활용</strong>
+                <p>화면 하단 활용도가 낮아질 수 있는 영역에 광고·날씨 정보 배치. 수익 모델과 정보 제공을 동시에 해결.</p>
+              </div>
             </div>
-            <div class="admin-branch-item">
-              <div class="fn purple-node">이용자 분석</div>
-              <p>이용 현황 데이터 그래프</p>
+            <div class="decision-item">
+              <div class="d-num">②</div>
+              <div class="d-content">
+                <strong>리워드 기반 설계</strong>
+                <p>강제가 아닌 마일리지·스탬프 미션으로 자발적 안전 행동 유도. 경쟁 심리를 활용한 주간 순위 시스템.</p>
+              </div>
             </div>
-            <div class="admin-branch-item">
-              <div class="fn purple-node">고장 신고 내역</div>
-              <p>유지보수 필요 킥보드 확인</p>
+            <div class="decision-item">
+              <div class="d-num">③</div>
+              <div class="d-content">
+                <strong>4단계 대여 프로세스</strong>
+                <p>킥보드 선택 → 헬멧 인식 → 면허 확인 → 음주 측정(야간). 단계별 안전 확인을 자연스러운 흐름으로 설계.</p>
+              </div>
+            </div>
+            <div class="decision-item">
+              <div class="d-num">④</div>
+              <div class="d-content">
+                <strong>음주 측정 시간 제한</strong>
+                <p>18:00~06:00 야간 시간대에만 음주 측정 적용. 낮 시간대 대여 흐름을 방해하지 않으면서 실질적 위험 시간대를 집중 관리.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- UX Design Decisions -->
-      <div class="ux-decisions">
-        <h3 class="sub-heading">UX 설계 핵심 결정</h3>
-        <div class="decision-grid">
-          <div class="decision-item">
-            <div class="d-num">①</div>
-            <div class="d-content">
-              <strong>세로 비율 활용</strong>
-              <p>화면 하단 활용도가 낮아질 수 있는 영역에 광고·날씨 정보 배치. 수익 모델과 정보 제공을 동시에 해결.</p>
+      <div class="step-arrow-down">↓</div>
+
+      <!-- ===== STEP 6 ===== -->
+      <div class="step-card" data-tabs="all result">
+        <div class="step-header">
+          <div class="step-num">6</div>
+          <div class="step-title-block">
+            <h2 class="step-title">기대효과 및 배운 점</h2>
+            <p class="step-sub">서비스가 만들어낼 변화와 프로젝트 회고</p>
+          </div>
+          <span class="step-tag output">OUTPUT</span>
+        </div>
+
+        <div class="step-body">
+          <div class="result-grid">
+            <div class="result-card">
+              <div class="r-icon">🛡️</div>
+              <h3>안전 확대</h3>
+              <p>마일리지·안전 미션으로 안전 탑승의 즐거움 제공 → 탑승률 상승과 사고 예방률 동반 상승</p>
+            </div>
+            <div class="result-card">
+              <div class="r-icon">✨</div>
+              <h3>이미지 개선</h3>
+              <p>안전한 탑승 문화 유도 → 전동 킥보드가 단순 단속 대상이라는 이미지 탈피</p>
+            </div>
+            <div class="result-card">
+              <div class="r-icon">🤝</div>
+              <h3>협업사 긍정 이미지</h3>
+              <p>킥보드 회사가 안전을 위해 적극적으로 노력한다는 메시지 전달</p>
+            </div>
+            <div class="result-card">
+              <div class="r-icon">💹</div>
+              <h3>경제적 이득</h3>
+              <p>안전 이미지로 탑승 고객 증가 + 디스플레이 광고 수익 창출</p>
             </div>
           </div>
-          <div class="decision-item">
-            <div class="d-num">②</div>
-            <div class="d-content">
-              <strong>리워드 기반 설계</strong>
-              <p>강제가 아닌 마일리지·스탬프 미션으로 자발적 안전 행동 유도. 경쟁 심리를 활용한 주간 순위 시스템.</p>
-            </div>
-          </div>
-          <div class="decision-item">
-            <div class="d-num">③</div>
-            <div class="d-content">
-              <strong>4단계 대여 프로세스</strong>
-              <p>킥보드 선택 → 헬멧 인식 → 면허 확인 → 음주 측정(야간). 단계별 안전 확인을 자연스러운 흐름으로 설계.</p>
-            </div>
-          </div>
-          <div class="decision-item">
-            <div class="d-num">④</div>
-            <div class="d-content">
-              <strong>설치 구조 설계</strong>
-              <p>방수 한계 보완을 위한 박스형 보호 케이스, 헬멧 보관함, 2인 탑승 방지 별도 카메라 추가.</p>
+
+          <div class="learning-box">
+            <h3>이 프로젝트에서 배운 것</h3>
+            <div class="learning-items">
+              <div class="learning-item">
+                <span class="l-tag">제약 → 기회</span>
+                <p>세로형 특수 디스플레이라는 제약을 단점이 아닌, 킥보드 스테이션이라는 특정 공간에 최적화된 강점으로 전환</p>
+              </div>
+              <div class="learning-item">
+                <span class="l-tag">현실 가능성</span>
+                <p>팀장으로서 아이디어의 현실 가능성을 중심으로 방향을 정리하고, 기존 인프라(PLUSPOT)와의 연계로 실현 가능한 서비스 모델 도출</p>
+              </div>
+              <div class="learning-item">
+                <span class="l-tag">사용자 중심</span>
+                <p>강제가 아닌 리워드 기반으로 사용자가 자발적으로 안전 행동을 하도록 유도하는 UX 설계 경험</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  </section>
-
-  <!-- ===== R: Result ===== -->
-  <section id="result" class="section star-section result-section">
-    <div class="container">
-      <div class="star-label r-label">
-        <span class="star-letter">R</span>
-        <div>
-          <div class="star-word">Result</div>
-          <div class="star-desc">서비스가 만들어낼 변화</div>
-        </div>
-      </div>
-
-      <h2 class="section-heading">킥보드 사고는 충분히 방지할 수 있다</h2>
-
-      <div class="result-grid">
-        <div class="result-card">
-          <div class="r-icon">🛡️</div>
-          <h3>안전 확대</h3>
-          <p>마일리지·안전 미션으로 안전 탑승의 즐거움 제공 → 탑승률 상승과 사고 예방률 동반 상승</p>
-        </div>
-        <div class="result-card">
-          <div class="r-icon">✨</div>
-          <h3>이미지 개선</h3>
-          <p>안전한 탑승 문화 유도 → 전동 킥보드가 단순 단속 대상이라는 이미지 탈피</p>
-        </div>
-        <div class="result-card">
-          <div class="r-icon">🤝</div>
-          <h3>협업사 긍정 이미지</h3>
-          <p>킥보드 회사가 안전을 위해 적극적으로 노력한다는 메시지 전달</p>
-        </div>
-        <div class="result-card">
-          <div class="r-icon">💹</div>
-          <h3>경제적 이득</h3>
-          <p>안전 이미지로 탑승 고객 증가 + 디스플레이 광고 수익 창출</p>
-        </div>
-      </div>
-
-      <div class="learning-box">
-        <h3>이 프로젝트에서 배운 것</h3>
-        <div class="learning-items">
-          <div class="learning-item">
-            <span class="l-tag">제약 → 기회</span>
-            <p>세로형 특수 디스플레이라는 제약을 단점이 아닌, 킥보드 스테이션이라는 특정 공간에 최적화된 강점으로 전환</p>
-          </div>
-          <div class="learning-item">
-            <span class="l-tag">현실 가능성</span>
-            <p>팀장으로서 아이디어의 현실 가능성을 중심으로 방향을 정리하고, 기존 인프라(PLUSPOT)와의 연계로 실현 가능한 서비스 모델 도출</p>
-          </div>
-          <div class="learning-item">
-            <span class="l-tag">사용자 중심</span>
-            <p>강제가 아닌 리워드 기반으로 사용자가 자발적으로 안전 행동을 하도록 유도하는 UX 설계 경험</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-logos">
-        <span>GCOO</span>
-        <span class="fx">×</span>
-        <span>PLUSPOT</span>
-        <span class="fx">×</span>
+        <span>GCOO</span><span class="fx">×</span>
+        <span>PLUSPOT</span><span class="fx">×</span>
         <span>H·L Data Storage</span>
       </div>
-      <p>창업프로젝트실습 | 산업경영공학과 팀장 이수민</p>
+      <p>창업프로젝트실습 | 산업경영공학과 팀장</p>
       <p class="footer-sub">디자인학부 · 바이오시스템공학과 · 산업경영공학과 융합 프로젝트</p>
     </div>
   </footer>
