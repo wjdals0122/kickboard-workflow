@@ -426,6 +426,52 @@
     </div>
   </footer>
 
-  <script src="script.js?v=5"></script>
+  <script>
+// ===== Arrow visibility rules per tab =====
+const ARROW_RULES = {
+  all:    ['1-2', '2-3', '3-4', '4-5', '5-6'],
+  flow:   [],
+  design: ['3-4'],
+  result: []
+};
+
+const tabBtns = document.querySelectorAll('.tab-btn');
+const stepCards = document.querySelectorAll('.step-card');
+const arrows = document.querySelectorAll('.step-arrow-down');
+
+function applyTab(tabId) {
+  tabBtns.forEach(b => b.classList.toggle('active', b.dataset.tab === tabId));
+  stepCards.forEach(card => {
+    const tabs = card.dataset.tabs ? card.dataset.tabs.split(' ') : [];
+    const show = tabId === 'all' || tabs.includes(tabId);
+    card.style.display = show ? '' : 'none';
+  });
+  const allowed = ARROW_RULES[tabId] || [];
+  arrows.forEach(a => {
+    const between = a.dataset.between || '';
+    a.style.display = allowed.includes(between) ? '' : 'none';
+  });
+}
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => applyTab(btn.dataset.tab));
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.06 });
+
+stepCards.forEach(card => observer.observe(card));
+
+applyTab('all');
+setTimeout(() => {
+  stepCards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight) card.classList.add('visible');
+  });
+}, 120);
+  </script>
 </body>
 </html>
